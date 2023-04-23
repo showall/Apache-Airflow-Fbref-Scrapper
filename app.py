@@ -24,7 +24,7 @@ def scrape():
         except:
             pass
         a = os.getcwd()
-        call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3"])
+        call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3","-o","output.csv"])
         #os.chdir('.')        
         return (f"success")
 
