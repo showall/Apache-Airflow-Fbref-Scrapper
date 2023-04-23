@@ -21,9 +21,9 @@ def scrape():
         except:
             pass
         a = os.getcwd()
-       # call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3"])
+        call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3"])
         os.chdir('.')        
-        return (f"success {a}")
+        return (f"success")
 
 
 ########################main page
