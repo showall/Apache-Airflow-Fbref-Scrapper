@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 import os
 from subprocess import call
 from datetime import datetime, timedelta
@@ -27,7 +27,11 @@ def scrape():
         call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3","-o","output.csv"])
         #os.chdir('.')        
         return (f"success")
-
+    
+@app.route("download", methods = ["GET", "POST"])
+def download():
+    temp = os.path.abspath(os.getcwd())
+    return send_from_directory(directory=temp, filename="output.csv")
 
 ########################main page
 if __name__ == "__main__":    
