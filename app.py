@@ -16,7 +16,10 @@ def index():
 @app.route('/scrape', methods = ['GET', 'POST'])
 def scrape():
     if request.method == 'GET':
-       # os.chdir('./dags/scrapyfbref/')
+        try :
+            os.chdir('dags/scrapyfbref/')
+        except:
+            pass
         a = os.getcwd()
        # call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3"])
         os.chdir('.')        
