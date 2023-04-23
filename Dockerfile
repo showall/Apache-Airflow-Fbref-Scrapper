@@ -14,7 +14,7 @@ COPY . .
 
 # Set environment variables
 ENV AIRFLOW_HOME=/app
-ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
+ENV AIRFLOW__CORE__EXECUTOR=SequentialExecutor
 
 # Expose the webserver and scheduler ports
 EXPOSE 8080 8793

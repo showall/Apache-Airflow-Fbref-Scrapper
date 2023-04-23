@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/showall/Apache-Airflow-Fbref-Scrapper/blob/main/airflow.db-journal
+HostUrl=https://raw.githubusercontent.com/showall/Apache-Airflow-Fbref-Scrapper/main/airflow.db-journal
