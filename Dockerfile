@@ -12,6 +12,10 @@ WORKDIR /app
 # Set the ownership of the working directory to the airflow user
 RUN chown -R airflow /app
 
+# Create the logs directory and set permissions
+RUN mkdir -p /app/logs && \
+    chown -R airflow /app/logs
+
 # Copy the requirements file into the container at /app
 COPY requirements.txt .
 
@@ -33,4 +37,4 @@ EXPOSE 8080 8793
 
 # Start the Airflow webserver and scheduler
 # CMD ["bash", "-c", "airflow db init && airflow webserver --port 8080 & airflow scheduler"]
-CMD ["bash", "-c", "airflow db init && airflow users create -r Admin -u airflow -e airflow@example.com -f airflow -l user -p airflow && airflow webserver --port 8080 & airflow scheduler"]
+CMD ["bash", "-c", "airflow db init && airflow webserver --port 8080 & airflow scheduler"]
