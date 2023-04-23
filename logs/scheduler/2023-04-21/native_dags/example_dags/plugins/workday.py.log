@@ -1,0 +1,322 @@
+[2023-04-22T01:49:03.635+0800] {processor.py:153} INFO - Started process (PID=2762) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:49:03.635+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:49:03.636+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:49:03.636+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:49:03.638+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:49:03.637+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:49:03.638+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:49:03.656+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2023-04-22T01:49:46.265+0800] {processor.py:153} INFO - Started process (PID=2806) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:49:46.268+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:49:46.269+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:49:46.269+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:49:46.273+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:49:46.272+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:49:46.273+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:49:46.290+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.027 seconds
+[2023-04-22T01:50:23.560+0800] {processor.py:153} INFO - Started process (PID=2850) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:50:23.563+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:50:23.564+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:50:23.564+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:50:23.566+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:50:23.565+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:50:23.566+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:50:23.584+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.026 seconds
+[2023-04-22T01:51:05.938+0800] {processor.py:153} INFO - Started process (PID=2895) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:51:05.941+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:51:05.942+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:51:05.942+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:51:05.943+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:51:05.943+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:51:05.943+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:51:05.958+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.021 seconds
+[2023-04-22T01:51:47.314+0800] {processor.py:153} INFO - Started process (PID=2949) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:51:47.317+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:51:47.317+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:51:47.317+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:51:47.319+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:51:47.319+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:51:47.319+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:51:47.334+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2023-04-22T01:52:28.483+0800] {processor.py:153} INFO - Started process (PID=2999) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:52:28.486+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:52:28.486+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:52:28.486+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:52:28.488+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:52:28.487+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:52:28.488+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:52:28.506+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.026 seconds
+[2023-04-22T01:53:10.035+0800] {processor.py:153} INFO - Started process (PID=3041) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:53:10.038+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:53:10.039+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:53:10.039+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:53:10.040+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:53:10.040+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:53:10.041+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:53:10.058+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.025 seconds
+[2023-04-22T01:53:49.269+0800] {processor.py:153} INFO - Started process (PID=3083) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:53:49.272+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:53:49.273+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:53:49.273+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:53:49.274+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:53:49.274+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:53:49.275+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:53:49.290+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2023-04-22T01:54:29.702+0800] {processor.py:153} INFO - Started process (PID=3127) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:54:29.705+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:54:29.705+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:54:29.705+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:54:29.707+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:54:29.706+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:54:29.707+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:54:29.724+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2023-04-22T01:55:11.475+0800] {processor.py:153} INFO - Started process (PID=3173) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:55:11.478+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:55:11.479+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:55:11.479+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:55:11.480+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:55:11.480+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:55:11.480+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:55:11.497+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2023-04-22T01:55:50.909+0800] {processor.py:153} INFO - Started process (PID=3218) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:55:50.912+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:55:50.913+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:55:50.913+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:55:50.914+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:55:50.914+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:55:50.915+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:55:50.930+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2023-04-22T01:56:32.592+0800] {processor.py:153} INFO - Started process (PID=3264) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:56:32.595+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:56:32.595+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:56:32.595+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:56:32.597+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:56:32.596+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:56:32.597+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:56:32.614+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.025 seconds
+[2023-04-22T01:57:11.995+0800] {processor.py:153} INFO - Started process (PID=3310) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:57:11.998+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:57:11.999+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:57:11.998+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:57:12.000+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:57:12.000+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:57:12.000+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:57:12.018+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.025 seconds
+[2023-04-22T01:57:52.549+0800] {processor.py:153} INFO - Started process (PID=3359) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:57:52.552+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:57:52.553+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:57:52.553+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:57:52.556+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:57:52.554+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:57:52.556+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:57:52.572+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.025 seconds
+[2023-04-22T01:58:34.233+0800] {processor.py:153} INFO - Started process (PID=3404) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:58:34.236+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:58:34.237+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:58:34.236+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:58:34.238+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:58:34.238+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:58:34.238+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:58:34.255+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.025 seconds
+[2023-04-22T01:59:14.760+0800] {processor.py:153} INFO - Started process (PID=3446) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:59:14.763+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:59:14.764+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:59:14.763+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:59:14.765+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:59:14.765+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:59:14.765+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:59:14.779+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.021 seconds
+[2023-04-22T01:59:54.278+0800] {processor.py:153} INFO - Started process (PID=3488) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:59:54.281+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T01:59:54.281+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:59:54.281+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:59:54.283+0800] {logging_mixin.py:137} INFO - [2023-04-22T01:59:54.282+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T01:59:54.283+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T01:59:54.299+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2023-04-22T02:01:11.325+0800] {processor.py:153} INFO - Started process (PID=3549) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:01:11.326+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T02:01:11.327+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:01:11.327+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:01:11.329+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:01:11.328+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T02:01:11.329+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:01:11.360+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.037 seconds
+[2023-04-22T02:01:51.894+0800] {processor.py:153} INFO - Started process (PID=3595) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:01:51.898+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T02:01:51.898+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:01:51.898+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:01:51.900+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:01:51.899+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T02:01:51.900+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:01:51.918+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.026 seconds
+[2023-04-22T02:02:31.990+0800] {processor.py:153} INFO - Started process (PID=3639) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:02:31.993+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T02:02:31.994+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:02:31.994+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:02:31.996+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:02:31.995+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T02:02:31.996+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:02:32.012+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2023-04-22T02:03:14.228+0800] {processor.py:153} INFO - Started process (PID=3690) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:03:14.232+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T02:03:14.232+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:03:14.232+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:03:14.234+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:03:14.233+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T02:03:14.234+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:03:14.248+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2023-04-22T02:03:54.208+0800] {processor.py:153} INFO - Started process (PID=3740) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:03:54.211+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T02:03:54.212+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:03:54.212+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:03:54.213+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:03:54.213+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T02:03:54.213+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:03:54.230+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2023-04-22T02:04:35.387+0800] {processor.py:153} INFO - Started process (PID=3782) to work on /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:04:35.391+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-04-22T02:04:35.391+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:04:35.391+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:04:35.393+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:04:35.392+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py", line 24, in <module>
+    from pandas.tseries.holiday import USFederalHolidayCalendar
+ModuleNotFoundError: No module named 'pandas'
+[2023-04-22T02:04:35.393+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py
+[2023-04-22T02:04:35.408+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds

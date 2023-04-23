@@ -1,0 +1,144 @@
+[2023-04-22T02:49:39.006+0800] {processor.py:153} INFO - Started process (PID=5194) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:39.006+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:39.007+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:39.007+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:39.011+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:39.011+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:39.011+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:39.028+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.024 seconds
+[2023-04-22T02:49:40.679+0800] {processor.py:153} INFO - Started process (PID=5196) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:40.679+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:40.680+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:40.680+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:40.685+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:40.684+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:40.685+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:40.700+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.023 seconds
+[2023-04-22T02:49:42.321+0800] {processor.py:153} INFO - Started process (PID=5198) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:42.322+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:42.322+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:42.322+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:42.327+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:42.326+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:42.327+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:42.341+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.022 seconds
+[2023-04-22T02:49:43.964+0800] {processor.py:153} INFO - Started process (PID=5201) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:43.964+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:43.965+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:43.965+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:43.969+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:43.969+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:43.970+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:43.987+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.026 seconds
+[2023-04-22T02:49:46.232+0800] {processor.py:153} INFO - Started process (PID=5203) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:46.232+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:46.233+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:46.232+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:46.237+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:46.236+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:46.237+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:46.254+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.024 seconds
+[2023-04-22T02:49:48.508+0800] {processor.py:153} INFO - Started process (PID=5206) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:48.509+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:48.509+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:48.509+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:48.513+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:48.513+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:48.514+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:48.530+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.023 seconds
+[2023-04-22T02:49:50.776+0800] {processor.py:153} INFO - Started process (PID=5208) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:50.776+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:50.777+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:50.776+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:50.781+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:50.780+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:50.781+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:50.796+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.022 seconds
+[2023-04-22T02:49:52.508+0800] {processor.py:153} INFO - Started process (PID=5210) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:52.509+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:52.509+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:52.509+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:52.515+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:52.514+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:52.515+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:52.530+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.024 seconds
+[2023-04-22T02:49:54.099+0800] {processor.py:153} INFO - Started process (PID=5212) to work on /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:54.100+0800] {processor.py:743} INFO - Processing file /home/gerardsho/airflow/dags/scrapy_fbref_players.py for tasks to queue
+[2023-04-22T02:49:54.101+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:54.101+0800] {dagbag.py:532} INFO - Filling up the DagBag from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:54.105+0800] {logging_mixin.py:137} INFO - [2023-04-22T02:49:54.104+0800] {dagbag.py:341} ERROR - Failed to import: /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+Traceback (most recent call last):
+  File "/home/gerardsho/airflow_env/lib/python3.8/site-packages/airflow/models/dagbag.py", line 337, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/gerardsho/airflow/dags/scrapy_fbref_players.py", line 5, in <module>
+    from scrapyfbref.scrapyfbref.spiders.spider1 import MySpiderForPlayers
+  File "/home/gerardsho/airflow/dags/scrapyfbref/scrapyfbref/spiders/spider1.py", line 1, in <module>
+    import scrapy
+ModuleNotFoundError: No module named 'scrapy'
+[2023-04-22T02:49:54.105+0800] {processor.py:755} WARNING - No viable dags retrieved from /home/gerardsho/airflow/dags/scrapy_fbref_players.py
+[2023-04-22T02:49:54.121+0800] {processor.py:175} INFO - Processing /home/gerardsho/airflow/dags/scrapy_fbref_players.py took 0.024 seconds
