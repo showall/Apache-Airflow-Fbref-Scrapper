@@ -3028,3 +3028,931 @@ File Path                                                 PID    Runtime      # 
 /home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.40s           2023-04-21T19:48:44
 /home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-21T19:48:43
 ================================================================================
+[2023-04-23T17:18:56.423+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T17:18:56.426+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T17:18:56.426+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T17:18:56.426+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:18:56.445+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:18:56.639+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:18:56
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+================================================================================
+[2023-04-23T17:19:26.792+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:19:26
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:18:57
+================================================================================
+[2023-04-23T17:19:56.563+0800] {manager.py:524} INFO - DAG scrapy_fbref_players is missing and will be deactivated.
+[2023-04-23T17:19:56.569+0800] {manager.py:534} INFO - Deactivated 1 DAGs which are no longer present in file.
+[2023-04-23T17:19:56.580+0800] {manager.py:538} INFO - Deleted DAG scrapy_fbref_players in serialized_dag table
+[2023-04-23T17:19:57.176+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:19:57
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T09:19:28
+================================================================================
+[2023-04-23T17:20:27.582+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.11s           2023-04-23T09:20:27
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:19:58
+================================================================================
+[2023-04-23T17:20:57.854+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:20:57
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:20:28
+================================================================================
+[2023-04-23T17:21:28.988+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.81s           2023-04-23T09:21:28
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T09:20:59
+================================================================================
+[2023-04-23T17:21:59.810+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.50s           2023-04-23T09:21:59
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:21:30
+================================================================================
+[2023-04-23T17:22:30.561+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.50s           2023-04-23T09:22:30
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:22:00
+================================================================================
+[2023-04-23T17:23:01.444+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.61s           2023-04-23T09:23:01
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:22:31
+================================================================================
+[2023-04-23T17:23:32.533+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.81s           2023-04-23T09:23:32
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:23:02
+================================================================================
+[2023-04-23T17:23:56.475+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:23:56.477+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:24:03.338+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.50s           2023-04-23T09:24:03
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T09:23:33
+================================================================================
+[2023-04-23T17:24:34.038+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.40s           2023-04-23T09:24:34
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:24:04
+================================================================================
+[2023-04-23T17:25:04.698+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.40s           2023-04-23T09:25:04
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:24:35
+================================================================================
+[2023-04-23T17:25:35.693+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.70s           2023-04-23T09:25:35
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:25:05
+================================================================================
+[2023-04-23T17:26:06.148+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:26:06
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T09:25:36
+================================================================================
+[2023-04-23T17:26:36.523+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:26:36
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:26:07
+================================================================================
+[2023-04-23T17:26:57.562+0800] {manager.py:524} INFO - DAG hello_world_dag is missing and will be deactivated.
+[2023-04-23T17:26:57.564+0800] {manager.py:534} INFO - Deactivated 1 DAGs which are no longer present in file.
+[2023-04-23T17:26:57.576+0800] {manager.py:538} INFO - Deleted DAG hello_world_dag in serialized_dag table
+[2023-04-23T17:27:06.917+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:27:06
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:26:37
+================================================================================
+[2023-04-23T17:27:37.300+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:27:37
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:27:07
+================================================================================
+[2023-04-23T17:28:07.673+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:28:07
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:27:38
+================================================================================
+[2023-04-23T17:28:38.078+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:28:38
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:28:08
+================================================================================
+[2023-04-23T17:28:56.515+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:28:56.519+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:29:08.470+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:29:08
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:28:38
+================================================================================
+[2023-04-23T17:29:38.907+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:29:38
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:29:08
+================================================================================
+[2023-04-23T17:30:09.292+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:30:09
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:29:39
+================================================================================
+[2023-04-23T17:30:39.511+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:30:39
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:30:10
+================================================================================
+[2023-04-23T17:31:09.716+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:31:09
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:30:40
+================================================================================
+[2023-04-23T17:31:39.912+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:31:39
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:31:11
+================================================================================
+[2023-04-23T17:32:10.154+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:32:10
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:31:41
+================================================================================
+[2023-04-23T17:32:40.351+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:32:40
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:32:11
+================================================================================
+[2023-04-23T17:33:10.549+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:33:10
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:32:41
+================================================================================
+[2023-04-23T17:33:40.743+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:33:40
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:33:12
+================================================================================
+[2023-04-23T17:33:56.566+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:33:56.573+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:34:10.948+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:34:10
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:33:42
+================================================================================
+[2023-04-23T17:34:41.126+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:34:41
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.32s           2023-04-23T09:34:13
+================================================================================
+[2023-04-23T17:35:11.293+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:35:11
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:34:43
+================================================================================
+[2023-04-23T17:35:41.498+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:35:41
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:35:14
+================================================================================
+[2023-04-23T17:36:11.698+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:36:11
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:35:44
+================================================================================
+[2023-04-23T17:36:41.895+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:36:41
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:36:14
+================================================================================
+[2023-04-23T17:37:12.096+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:37:12
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:36:44
+================================================================================
+[2023-04-23T17:37:42.305+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.11s           2023-04-23T09:37:42
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:37:14
+================================================================================
+[2023-04-23T17:38:12.542+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:38:12
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:37:44
+================================================================================
+[2023-04-23T17:38:42.733+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.10s           2023-04-23T09:38:42
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:38:15
+================================================================================
+[2023-04-23T17:38:56.632+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:38:56.634+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:39:13.628+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           1  0.10s           2023-04-23T09:38:45
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           1  0.81s           2023-04-23T09:39:13
+================================================================================
+[2023-04-23T17:39:44.229+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           1  0.50s           2023-04-23T09:39:44
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           1  0.30s           2023-04-23T09:39:15
+================================================================================
+[2023-04-23T17:40:14.930+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           1  0.60s           2023-04-23T09:40:14
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           1  0.10s           2023-04-23T09:39:45
+================================================================================
+[2023-04-23T17:40:45.631+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.61s           2023-04-23T09:40:45
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           1  0.20s           2023-04-23T09:40:16
+================================================================================
+[2023-04-23T17:43:06.646+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T17:43:06.768+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T17:43:06.768+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T17:43:06.769+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T17:43:06.769+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:43:06.772+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:43:07.419+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.61s           2023-04-23T09:43:07
+================================================================================
+[2023-04-23T17:45:04.319+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T17:55:10.678+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T17:55:10.681+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T17:55:10.681+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T17:55:10.681+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:55:10.687+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:55:11.267+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T09:55:11
+================================================================================
+[2023-04-23T17:57:26.115+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T17:57:26.472+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T17:57:26.472+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T17:57:26.473+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T17:57:26.473+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T17:57:26.489+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T17:57:27.997+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.41s           2023-04-23T09:57:27
+================================================================================
+[2023-04-23T17:57:59.396+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.60s           2023-04-23T09:57:59
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T09:57:30
+================================================================================
+[2023-04-23T17:58:29.660+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T09:58:29
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T09:58:03
+================================================================================
+[2023-04-23T17:59:00.717+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.40s           2023-04-23T09:59:00
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:58:36
+================================================================================
+[2023-04-23T17:59:31.537+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.40s           2023-04-23T09:59:31
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:59:07
+================================================================================
+[2023-04-23T18:00:02.683+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:00:02
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T09:59:40
+================================================================================
+[2023-04-23T18:00:33.646+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:00:33
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:00:13
+================================================================================
+[2023-04-23T18:01:03.732+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.41s           2023-04-23T10:01:03
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:00:46
+================================================================================
+[2023-04-23T18:01:34.853+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:01:34
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:01:18
+================================================================================
+[2023-04-23T18:02:05.357+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.51s           2023-04-23T10:02:05
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:01:51
+================================================================================
+[2023-04-23T18:02:27.193+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:02:27.195+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:02:36.354+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.40s           2023-04-23T10:02:36
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:02:25
+================================================================================
+[2023-04-23T18:03:07.532+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:03:07
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:02:56
+================================================================================
+[2023-04-23T18:03:38.499+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.70s           2023-04-23T10:03:38
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:03:29
+================================================================================
+[2023-04-23T18:03:59.094+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T18:04:17.344+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T18:04:17.345+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T18:04:17.345+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T18:04:17.345+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:04:17.355+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:04:18.531+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  1.11s           2023-04-23T10:04:18
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+================================================================================
+[2023-04-23T18:04:48.859+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.91s           2023-04-23T10:04:48
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.21s           2023-04-23T10:04:19
+================================================================================
+[2023-04-23T18:05:18.598+0800] {manager.py:524} INFO - DAG scrapy_fbref_players is missing and will be deactivated.
+[2023-04-23T18:05:18.602+0800] {manager.py:534} INFO - Deactivated 1 DAGs which are no longer present in file.
+[2023-04-23T18:05:18.611+0800] {manager.py:538} INFO - Deleted DAG scrapy_fbref_players in serialized_dag table
+[2023-04-23T18:05:19.121+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           0           1  0.51s           2023-04-23T10:05:19
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.30s           2023-04-23T10:04:52
+================================================================================
+[2023-04-23T18:05:19.843+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T18:05:36.820+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T18:05:36.821+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T18:05:36.821+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T18:05:36.821+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:05:36.829+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:05:37.603+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.71s           2023-04-23T10:05:37
+================================================================================
+[2023-04-23T18:08:23.036+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T18:08:23.195+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T18:08:23.196+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T18:08:23.196+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T18:08:23.196+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:08:23.200+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:08:23.852+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.60s           2023-04-23T10:08:23
+================================================================================
+[2023-04-23T18:10:38.010+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-04-23T18:10:38.166+0800] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-04-23T18:10:38.167+0800] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-04-23T18:10:38.167+0800] {manager.py:489} INFO - Checking for new files in /home/gerardsho/airflow/dags every 300 seconds
+[2023-04-23T18:10:38.167+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:10:38.172+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:10:38.838+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    0           0
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.61s           2023-04-23T10:10:38
+================================================================================
+[2023-04-23T18:11:09.440+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.60s           2023-04-23T10:11:09
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:10:40
+================================================================================
+[2023-04-23T18:11:39.685+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:11:39
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:11:12
+================================================================================
+[2023-04-23T18:12:10.795+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:12:10
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:11:44
+================================================================================
+[2023-04-23T18:12:41.524+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.70s           2023-04-23T10:12:41
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:12:17
+================================================================================
+[2023-04-23T18:13:12.390+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:13:12
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:12:49
+================================================================================
+[2023-04-23T18:13:43.107+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.50s           2023-04-23T10:13:43
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:13:21
+================================================================================
+[2023-04-23T18:14:15.297+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.32s           2023-04-23T10:14:15
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.10s           2023-04-23T10:13:54
+================================================================================
+[2023-04-23T18:14:45.546+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.21s           2023-04-23T10:14:45
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.21s           2023-04-23T10:14:27
+================================================================================
+[2023-04-23T18:15:16.636+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.32s           2023-04-23T10:15:16
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:14:59
+================================================================================
+[2023-04-23T18:15:38.225+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:15:38.253+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:15:47.531+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  2.27s           2023-04-23T10:15:47
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.53s           2023-04-23T10:15:33
+================================================================================
+[2023-04-23T18:16:19.115+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  3.07s           2023-04-23T10:16:19
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.84s           2023-04-23T10:16:10
+================================================================================
+[2023-04-23T18:16:49.296+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  4.18s           2023-04-23T10:16:47
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.53s           2023-04-23T10:16:49
+================================================================================
+[2023-04-23T18:17:21.143+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.82s           2023-04-23T10:17:21
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.53s           2023-04-23T10:16:49
+================================================================================
+[2023-04-23T18:17:52.891+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.11s           2023-04-23T10:17:52
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.41s           2023-04-23T10:17:22
+================================================================================
+[2023-04-23T18:18:24.449+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.91s           2023-04-23T10:18:24
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.31s           2023-04-23T10:17:56
+================================================================================
+[2023-04-23T18:18:56.757+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  3.66s           2023-04-23T10:18:56
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.30s           2023-04-23T10:18:29
+================================================================================
+[2023-04-23T18:19:27.951+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.12s           2023-04-23T10:19:27
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.30s           2023-04-23T10:19:03
+================================================================================
+[2023-04-23T18:19:59.243+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.91s           2023-04-23T10:19:59
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.30s           2023-04-23T10:19:37
+================================================================================
+[2023-04-23T18:20:30.956+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.81s           2023-04-23T10:20:30
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.30s           2023-04-23T10:20:10
+================================================================================
+[2023-04-23T18:20:39.149+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:20:39.152+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:21:00.970+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.81s           2023-04-23T10:21:00
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.41s           2023-04-23T10:20:42
+================================================================================
+[2023-04-23T18:21:32.535+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.81s           2023-04-23T10:21:32
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:21:16
+================================================================================
+[2023-04-23T18:22:03.342+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.81s           2023-04-23T10:22:03
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.30s           2023-04-23T10:21:49
+================================================================================
+[2023-04-23T18:22:34.537+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.71s           2023-04-23T10:22:34
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:22:22
+================================================================================
+[2023-04-23T18:23:05.456+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.81s           2023-04-23T10:23:05
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:22:55
+================================================================================
+[2023-04-23T18:23:36.523+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.60s           2023-04-23T10:23:36
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.11s           2023-04-23T10:23:27
+================================================================================
+[2023-04-23T18:24:08.011+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.70s           2023-04-23T10:24:08
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:23:59
+================================================================================
+[2023-04-23T18:24:38.404+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  4.56s           2023-04-23T10:24:36
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.94s           2023-04-23T10:24:38
+================================================================================
+[2023-04-23T18:25:09.578+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  1.11s           2023-04-23T10:25:09
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.94s           2023-04-23T10:24:38
+================================================================================
+[2023-04-23T18:25:39.622+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.91s           2023-04-23T10:25:39
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:25:10
+================================================================================
+[2023-04-23T18:25:39.677+0800] {manager.py:736} INFO - Searching for files in /home/gerardsho/airflow/dags
+[2023-04-23T18:25:39.683+0800] {manager.py:739} INFO - There are 2 files in /home/gerardsho/airflow/dags
+[2023-04-23T18:26:10.176+0800] {manager.py:864} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/gerardsho/airflow/dags/scrapy_fbref_players_dag.py                           1           0  0.91s           2023-04-23T10:26:10
+/home/gerardsho/airflow/dags/hello_world_dag.py                                    1           0  0.20s           2023-04-23T10:25:42
+================================================================================
+[2023-04-23T18:26:32.067+0800] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
