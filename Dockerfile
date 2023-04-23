@@ -2,8 +2,8 @@ FROM apache/airflow:2.5.1
 
 
 # Create a new user with UID/GID 1000
-RUN userdel -r airflow || true
-RUN useradd -m -u 1000 airflow
+#RUN userdel -r airflow || true
+#RUN useradd -m -u 1000 airflow
 
 # Set the working directory to /app
 WORKDIR /app
