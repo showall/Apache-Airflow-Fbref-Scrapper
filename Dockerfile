@@ -4,6 +4,7 @@ FROM apache/airflow:2.5.1
 # Create a new user with UID/GID 1000
 #RUN userdel -r airflow || true
 #RUN useradd -m -u 1000 airflow
+USER airflow
 
 # Set the working directory to /app
 WORKDIR /app
@@ -31,4 +32,5 @@ USER airflow
 EXPOSE 8080 8793
 
 # Start the Airflow webserver and scheduler
-CMD ["bash", "-c", "airflow db init && airflow webserver --port 8080 & airflow scheduler"]
+# CMD ["bash", "-c", "airflow db init && airflow webserver --port 8080 & airflow scheduler"]
+CMD ["bash", "-c", "airflow db init && airflow users create -r Admin -u airflow -e airflow@example.com -f airflow -l user -p airflow && airflow webserver --port 8080 & airflow scheduler"]
