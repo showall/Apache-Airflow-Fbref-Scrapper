@@ -16,10 +16,11 @@ def index():
 @app.route('/scrape', methods = ['GET', 'POST'])
 def scrape():
     if request.method == 'GET':
-        os.chdir('./dags/scrapyfbref/')
-        call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3"])
+       # os.chdir('./dags/scrapyfbref/')
+        a = os.getcwd()
+       # call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=3"])
         os.chdir('.')        
-        return ("success")
+        return (f"success {a}")
 
 
 ########################main page

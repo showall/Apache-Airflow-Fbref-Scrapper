@@ -14,7 +14,8 @@ RUN chown -R airflow /app
 
 # Create the logs directory and set permissions
 RUN mkdir -p /app/logs && \
-    chown -R airflow /app/logs
+    chown -R airflow /app/logs && \
+    chmod -R 777 /app/logs
 
 # Copy the requirements file into the container at /app
 COPY requirements.txt .
