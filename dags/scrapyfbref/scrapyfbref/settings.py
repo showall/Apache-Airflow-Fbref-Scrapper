@@ -17,7 +17,7 @@ ITEM_PIPELINE = {
 
 #AWS_ACCESS_KEY_ID = ' '
 #AWS_SECRET_ACCESS_KEY= ' '
-
+AWS_REGION_NAME = 'ap-southeast-1'
 FEED_URI='s3://fbrefdata0922/output/players_links.csv'
 FEED_FORMAT ='csv'
 
