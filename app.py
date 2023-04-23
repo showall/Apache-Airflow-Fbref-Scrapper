@@ -28,7 +28,7 @@ def scrape():
         #os.chdir('.')        
         return (f"success")
     
-@app.route("download", methods = ["GET", "POST"])
+@app.route("/download", methods = ["GET", "POST"])
 def download():
     temp = os.path.abspath(os.getcwd())
     return send_from_directory(directory=temp, filename="output.csv")
