@@ -30,8 +30,12 @@ def scrape():
     
 @app.route("/download", methods = ["GET", "POST"])
 def download():
+    try:           
+        os.chdir('dags/scrapyfbref/')
+    except:
+        pass
     temp = os.path.abspath(os.getcwd())
-    return send_from_directory(directory=temp, filename="output.csv")
+    return send_from_directory(directory=temp, path="output.csv")
 
 ########################main page
 if __name__ == "__main__":    
