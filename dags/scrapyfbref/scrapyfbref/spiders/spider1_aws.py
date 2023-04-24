@@ -13,8 +13,8 @@ class MySpiderForPlayers(CrawlSpider):
         "DOWNLOAD_DELAY" : 4,
         "DOWNLOAD_TIMEOUT" : 9,
         "CONCURRENT_REQUESTS" : 20,
-     #   "CLOSESPIDER_PAGECOUNT" : 10,
-        "CLOSESPIDER_ITEMCOUNT" : 100
+    #    "CLOSESPIDER_PAGECOUNT" : 10,
+  #      "CLOSESPIDER_ITEMCOUNT" : 100
 #         "FEEDS" : {
 #             's3://fbrefdata0921/players_links.csv': {
 #                 'format': 'csv',
@@ -45,7 +45,7 @@ class MySpiderForPlayers(CrawlSpider):
             follow=False),
         Rule(LinkExtractor(allow = r'\/players\/([a-z0-9]+)\/([A-z]+)',
                                        restrict_xpaths='//*[@class="section_wrapper"]',
-                                        deny = [ #r"\/players\/([a-z0-9]+)\/([A-z]+)\/\d+" ,
+                                       deny = [ r"\/players\/([a-z0-9]+)\/([A-z]+)\/\d+" ,
                                                r"\/players\/([a-z0-9]+)\/([A-z]+)\/([A-z]+)" ]
                                        ), 
             callback='parse_extract', follow=False),
