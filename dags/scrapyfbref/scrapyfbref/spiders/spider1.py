@@ -5,7 +5,7 @@ from scrapy.linkextractors import LinkExtractor
 
 class MySpiderForPlayers(CrawlSpider):
     user_agent ="Custom"
-    name = "fbref"
+    name = "fbref-default"
     allowed_domains = ["fbref.com"]
     start_urls =  ['https://fbref.com/en/players/']
     custom_settings = {
