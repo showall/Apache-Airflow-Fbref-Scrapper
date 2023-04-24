@@ -99,7 +99,7 @@ class MySpiderForPlayers(CrawlSpider):
         for link in list(set(links)):
             yield {
             "player_name": name,
-            "match_logs_url": link.url
+            "match_logs_url": link
              }
 
 
