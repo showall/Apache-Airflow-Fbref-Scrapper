@@ -13,7 +13,7 @@ class MySpiderForPlayers(CrawlSpider):
         "DOWNLOAD_DELAY" : 4,
         "DOWNLOAD_TIMEOUT" : 9,
         "CONCURRENT_REQUESTS" : 20,
-        "CLOSESPIDER_PAGECOUNT" : 10,
+     #   "CLOSESPIDER_PAGECOUNT" : 10,
         "CLOSESPIDER_ITEMCOUNT" : 100
 #         "FEEDS" : {
 #             's3://fbrefdata0921/players_links.csv': {
@@ -70,7 +70,7 @@ class MySpiderForPlayers(CrawlSpider):
 
 
     def parse_extract(self, response):
-        print("HERE",response.url)    
+    #    print("HERE",response.url)    
         links = response.xpath('//*[(@class="listhead" and contains(., "Match Logs (Summary)"))]/following-sibling::*[1]//a/@href')
         name = str(response.url).split("/")[-1]
         #links = LinkExtractor(restrict_xpaths='//*[(@class="listhead" and contains(text(), "Match Logs (Summary)"))]/following-sibling::*[1]')
