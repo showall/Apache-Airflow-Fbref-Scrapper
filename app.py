@@ -24,8 +24,8 @@ def scrape():
         except:
             pass
         a = os.getcwd()
-        call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
-     #   call(["scrapy", "crawl", "fbref","-o","output.csv"])
+     #   call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
+        call(["scrapy", "crawl", "fbref","-o","output1.csv"])
         #os.chdir('.')        
         return (f"success")
     
@@ -36,7 +36,7 @@ def download():
     except:
         pass
     temp = os.path.abspath(os.getcwd())
-    return send_from_directory(directory=temp, path="output.csv")
+    return send_from_directory(directory=temp, path="output1.csv")
 
 ########################main page
 if __name__ == "__main__":    
