@@ -18,8 +18,16 @@ ITEM_PIPELINE = {
 #AWS_ACCESS_KEY_ID = ' '
 #AWS_SECRET_ACCESS_KEY= ' '
 AWS_REGION_NAME = 'ap-southeast-1'
-FEED_URI='s3://fbrefdata0922/players_links.csv'
-FEED_FORMAT ='csv'
+# FEED_URI=''
+# FEED_FORMAT ='csv'
+
+
+FEEDS = {
+    's3://fbrefdata0922/players_links.csv': {
+        'format': 'csv',
+    }
+}
+
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
