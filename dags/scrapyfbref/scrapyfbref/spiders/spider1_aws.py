@@ -94,7 +94,7 @@ class MySpiderForPlayers(CrawlSpider):
 
 
     def parse_extract(self, response): 
-        links = response.xpath('//*[(@class="listhead" and contains(., "Match Logs (Summary)"))]/following-sibling::*[1]//a/@href')
+        links = response.xpath('//*[(@class="listhead" and contains(., "Match Logs (Summary)"))]/following-sibling::*[1]//a/@href').extract()
         name = str(response.url).split("/")[-1]
         for link in list(set(links)):
             yield {
