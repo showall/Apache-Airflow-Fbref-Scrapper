@@ -24,18 +24,47 @@ class MySpiderForPlayers(CrawlSpider):
 # }
     }    
     
-    # rules = (
-    #     Rule(LinkExtractor(allow = r'\/players\/([a-z]+)',
+
+#--------------------------SECTION 1-----------------------------------------------
+
+    # def parse(self, response) : 
+    #     link_extractor = LinkExtractor(allow = r'\/players\/([a-z]+)',
     #                        restrict_xpaths=('//*[@class="section_wrapper"]')
-    #                        ), 
-    #         callback='parse_club_links', 
-    #         follow=True),
-    #     Rule(LinkExtractor(allow = r'\/players\/([a-z0-9]+)\/([A-z]+)',
+    #                        )
+            
+    #     club_links = link_extractor.extract_links(response)
+    #     for link in club_links :
+    #         yield scrapy.Request(link.url, callback=self.parse_club_links, headers={'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'})
+
+
+
+    # def parse_club_links(self, response):
+    #     count = 0 
+    #     link_extractor = LinkExtractor(allow = r'\/players\/([a-z0-9]+)\/([A-z]+)',
     #                                    restrict_xpaths='//*[@class="section_wrapper"]',
-    #                                     deny = r"\/players\/([a-z0-9]+)\/([A-z]+)\/\d+"
-    #                                    ), 
-    #         callback='parse_extract', follow=False),
-    # )
+    #                                     deny = [ r"\/players\/([a-z0-9]+)\/([A-z]+)\/\d+" ,
+    #                                            r"\/players\/([a-z0-9]+)\/([A-z]+)\/([A-z]+)" ]
+    #                                    )
+    #     club_links = link_extractor.extract_links(response)
+    #     for link in club_links :
+    #         yield scrapy.Request(link.url, callback=self.parse_extract, headers={'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'})
+
+
+    # def parse_extract(self, response): 
+    #     links = response.xpath('//*[(@class="listhead" and contains(., "Match Logs (Summary)"))]/following-sibling::*[1]//a/@href')
+    #     name = str(response.url).split("/")[-1]
+    #     for link in list(set(links)):
+    #         yield {
+    #         "player_name": name,
+    #         "match_logs_url": link
+    #          }
+
+
+
+
+#--------------------------SECTION 2-----------------------------------------------
+
+
 
     rules = (
         Rule(LinkExtractor(allow = r'\/players\/([a-z]+)',
@@ -60,30 +89,23 @@ class MySpiderForPlayers(CrawlSpider):
                                                r"\/players\/([a-z0-9]+)\/([A-z]+)\/([A-z]+)" ]
                                        )
         club_links = link_extractor.extract_links(response)
-    #    print(response.url)
-        attributes = {}
-        count = 0 
-
         for link in club_links :
-            #print(link)
-            #yield {"url": link.text, "text": link.url}
             yield scrapy.Request(link.url, callback=self.parse_extract, headers={'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'})
 
 
-    def parse_extract(self, response):
-      #  print("HERE",response.url)    
+    def parse_extract(self, response): 
         links = response.xpath('//*[(@class="listhead" and contains(., "Match Logs (Summary)"))]/following-sibling::*[1]//a/@href')
         name = str(response.url).split("/")[-1]
-        #links = LinkExtractor(restrict_xpaths='//*[(@class="listhead" and contains(text(), "Match Logs (Summary)"))]/following-sibling::*[1]')
-      #  links = LinkExtractor()
-      #  link_extractor_match_log = links.extract_links(response)    
         for link in list(set(links)):
-        #    yield scrapy.Request(response.urljoin(link), callback=self.parse_match_logs, headers={'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'})
             yield {
             "player_name": name,
             "match_logs_url": link.url
              }
 
+
+
+
+#--------------------------SECTION 3-----------------------------------------------
 
     # rules = (
     #     Rule(LinkExtractor(allow = r'\/players\/([a-z]+)',
