@@ -65,12 +65,13 @@ class MySpiderForPlayers(CrawlSpider):
         count = 0 
 
         for link in club_links :
+            #print(link)
             #yield {"url": link.text, "text": link.url}
             yield scrapy.Request(link.url, callback=self.parse_extract, headers={'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'})
 
 
     def parse_extract(self, response):
-    #    print("HERE",response.url)    
+      #  print("HERE",response.url)    
         links = response.xpath('//*[(@class="listhead" and contains(., "Match Logs (Summary)"))]/following-sibling::*[1]//a/@href')
         name = str(response.url).split("/")[-1]
         #links = LinkExtractor(restrict_xpaths='//*[(@class="listhead" and contains(text(), "Match Logs (Summary)"))]/following-sibling::*[1]')
