@@ -41,6 +41,7 @@ def download():
             return send_from_directory(directory=temp1, path="output1.csv")
         except Exception as e:
             return (f"Error {temp1}, {temp2}, {e}")
+    return (f"Run The Scraper")
 
 ########################main page
 if __name__ == "__main__":    
