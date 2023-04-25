@@ -32,7 +32,7 @@ def scrape():
 @app.route("/download", methods = ["GET", "POST"])
 def download():
     try:           
-        os.chdir('dags/scrapyfbref/')
+        #os.chdir('dags/scrapyfbref/')
         temp = os.path.abspath(os.getcwd())
         return send_from_directory(directory=temp, path="output1.csv")
     except Exception as e:
