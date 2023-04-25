@@ -72,12 +72,12 @@ class MySpiderForPlayers(CrawlSpider):
                            ), 
             callback='parse_club_links', 
             follow=False),
-        Rule(LinkExtractor(allow = r'\/players\/([a-z0-9]+)\/([A-z]+)',
-                                       restrict_xpaths='//*[@class="section_wrapper"]',
-                                       deny = [ r"\/players\/([a-z0-9]+)\/([A-z]+)\/\d+" ,
-                                               r"\/players\/([a-z0-9]+)\/([A-z]+)\/([A-z]+)" ]
-                                       ), 
-            callback='parse_extract', follow=False),
+        # Rule(LinkExtractor(allow = r'\/players\/([a-z0-9]+)\/([A-z]+)',
+        #                                restrict_xpaths='//*[@class="section_wrapper"]',
+        #                                deny = [ r"\/players\/([a-z0-9]+)\/([A-z]+)\/\d+" ,
+        #                                        r"\/players\/([a-z0-9]+)\/([A-z]+)\/([A-z]+)" ]
+        #                                ), 
+        #     callback='parse_extract', follow=False),
     )
 
 
