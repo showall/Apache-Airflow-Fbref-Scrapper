@@ -32,12 +32,12 @@ def scrape():
 @app.route("/download", methods = ["GET", "POST"])
 def download():
     if request.method == 'GET':
-        try:           
-            os.chdir('dags/scrapyfbref')
-            #os.chdir('dags/scrapyfbref/')
-            temp1 = os.path.abspath(os.getcwd())
-            os.chdir('')            
-            temp2 = os.path.abspath(os.getcwd())
+        os.chdir('dags/scrapyfbref')
+        #os.chdir('dags/scrapyfbref/')
+        temp1 = os.path.abspath(os.getcwd())
+        os.chdir('')            
+        temp2 = os.path.abspath(os.getcwd())
+        try :
             return send_from_directory(directory=temp1, path="output1.csv")
         except Exception as e:
             return (f"Error {temp1}, {temp2}, {e}")
