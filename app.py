@@ -21,9 +21,9 @@ def scrape():
     if request.method == 'GET':
         try :
             os.chdir('dags/scrapyfbref')
+            print("1",os.getcwd())
         except:
-            pass
-        a = os.getcwd()
+            print("2",os.getcwd())
      #   call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
         call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=8","-o","output1.csv"])
         #os.chdir('.')        
@@ -32,7 +32,10 @@ def scrape():
 @app.route("/download", methods = ["GET", "POST"])
 def download():
     if request.method == 'GET':
-        os.chdir('dags/scrapyfbref')
+        try:
+            os.chdir('dags/scrapyfbref')
+        except:
+            pass
         #os.chdir('dags/scrapyfbref/')
         temp1 = os.path.abspath(os.getcwd())
         os.chdir('/')            
