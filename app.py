@@ -36,7 +36,7 @@ def download():
         temp = os.path.abspath(os.getcwd())
         return send_from_directory(directory=temp, path="output1.csv")
     except:
-        return ("Error")
+        return (f"Error {os.path.abspath(os.getcwd())}")
 
 ########################main page
 if __name__ == "__main__":    
