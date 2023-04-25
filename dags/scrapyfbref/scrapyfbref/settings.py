@@ -15,15 +15,15 @@ ITEM_PIPELINE = {
 'scrapy.pipelines.files.S3FilesStore': 1
 }
 
-#AWS_ACCESS_KEY_ID = ' '
-#AWS_SECRET_ACCESS_KEY= ' '
+AWS_ACCESS_KEY_ID = None
+AWS_SECRET_ACCESS_KEY= None
 AWS_REGION_NAME = 'ap-southeast-1'
 # FEED_URI=''
 # FEED_FORMAT ='csv'
 
 
 FEEDS = {
-    's3://fbrefdata0922/players_links.csv': {
+    's3://fbrefdata0922/players_linkss.csv': {
         'format': 'csv',
     }
 }

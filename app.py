@@ -19,8 +19,9 @@ def method():
     os.chdir('dags/scrapyfbref/')
     print("1",os.getcwd())
     os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv -t csv')
-    client = boto3.client("s3")
-    time = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+    client = boto3.client("s3", aws_access_key_id=None,
+         aws_secret_access_key= None)
+    time = datetime.now().strftime("%Y%m%d%H%M%S")
     client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
     os.chdir(whereami)   
 
@@ -30,7 +31,7 @@ def method():
 def index():
     if request.method == 'GET':
         print('Scheduler initialised')
-        schedule.every(1).minutes.do(method)
+        schedule.every(10).minutes.do(method)
         print('Next job is set to run at: ' + str(schedule.next_run()))
         while True:
             schedule.run_pending()
