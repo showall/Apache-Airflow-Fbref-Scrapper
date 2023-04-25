@@ -5,6 +5,9 @@ from datetime import datetime, timedelta
 from pytz import timezone
 from dags.scrapyfbref.scrapyfbref.spiders.spider1_aws import MySpiderForPlayers
 import logging
+import schedule
+import os
+import time
 
 
 ######################Set up variables for use in our script
@@ -14,8 +17,19 @@ app = Flask(__name__)
 @app.route('/', methods = ['GET', 'POST'])
 def index():
     if request.method == 'GET':
-        return ("Welcome, Please go to /scrape")
-    
+        print('Scheduler initialised')
+        whereami = os.path.abspath(os.getcwd())
+        os.chdir('dags/scrapyfbref/')
+        print("1",os.getcwd())
+        schedule.every(5).minutes.do(lambda: os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv -t csv'))
+   
+        print('Next job is set to run at: ' + str(schedule.next_run()))
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
+    os.chdir(whereami)
+    return
+
 @app.route('/scrape', methods = ['GET', 'POST'])
 def scrape():
     if request.method == 'GET':
