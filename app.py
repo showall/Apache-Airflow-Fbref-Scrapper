@@ -20,7 +20,7 @@ def index():
 def scrape():
     if request.method == 'GET':
         try :
-            os.chdir('dags/scrapyfbref')
+            os.chdir('dags/scrapyfbref/')
             print("1",os.getcwd())
         except:
             print("2",os.getcwd())
@@ -33,7 +33,7 @@ def scrape():
 def download():
     if request.method == 'GET':
         try:
-            os.chdir('dags/scrapyfbref')
+            os.chdir('dags/scrapyfbref/')
         except:
             pass
         #os.chdir('dags/scrapyfbref/')
