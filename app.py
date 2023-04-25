@@ -33,10 +33,10 @@ def scrape():
 def download():
     try:           
         os.chdir('dags/scrapyfbref/')
+        temp = os.path.abspath(os.getcwd())
+        return send_from_directory(directory=temp, path="output1.csv")
     except:
-        pass
-    temp = os.path.abspath(os.getcwd())
-    return send_from_directory(directory=temp, path="output1.csv")
+        return ("Error")
 
 ########################main page
 if __name__ == "__main__":    
