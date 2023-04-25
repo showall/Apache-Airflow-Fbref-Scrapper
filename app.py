@@ -16,9 +16,12 @@ app = Flask(__name__)
 
 def method():
     whereami = os.path.abspath(os.getcwd())
-    os.chdir('dags/scrapyfbref/')
+    try:
+        os.chdir('dags/scrapyfbref/')
+    except:
+        pass
     print("1",os.getcwd())
-    os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv -t csv')
+    os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv:csv')
     client = boto3.client("s3", aws_access_key_id=None,
          aws_secret_access_key= None)
     time = datetime.now().strftime("%Y%m%d%H%M%S")
