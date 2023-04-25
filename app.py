@@ -26,7 +26,7 @@ def scrape():
             print("2",os.getcwd())
      #   call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
         call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=8","-o","output1.csv"])
-        #os.chdir('.')        
+        os.chdir(os.path.abspath(os.getcwd()))        
         return (f"success")
     
 @app.route("/download", methods = ["GET", "POST"])
@@ -38,7 +38,7 @@ def download():
             pass
         #os.chdir('dags/scrapyfbref/')
         temp1 = os.path.abspath(os.getcwd())
-        os.chdir('/')            
+        os.chdir(os.path.abspath(os.getcwd()))            
         temp2 = os.path.abspath(os.getcwd())
         try :
             return send_from_directory(directory=temp1, path="output1.csv")
