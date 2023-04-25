@@ -35,8 +35,8 @@ def download():
         os.chdir('dags/scrapyfbref/')
         temp = os.path.abspath(os.getcwd())
         return send_from_directory(directory=temp, path="output1.csv")
-    except:
-        return (f"Error {os.path.abspath(os.getcwd())}")
+    except Exception as e:
+        return (f"Error {os.path.abspath(os.getcwd())}, {e}")
 
 ########################main page
 if __name__ == "__main__":    
