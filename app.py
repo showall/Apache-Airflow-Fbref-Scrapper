@@ -27,7 +27,7 @@ def scrape():
             print("2",os.getcwd())
      #   call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
     #    call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=8","-o","output1.csv"])
-        call(["scrapy", "crawl", "fbref","-o","output1.csv", "f","csv"])
+        call(["scrapy", "crawl", "fbref","-o","output1.csv", "-t","csv"])
         os.chdir(whereami)        
         return (f"success")
     
