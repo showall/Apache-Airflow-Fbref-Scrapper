@@ -35,7 +35,7 @@ def download():
         os.chdir('dags/scrapyfbref')
         #os.chdir('dags/scrapyfbref/')
         temp1 = os.path.abspath(os.getcwd())
-        os.chdir('')            
+        os.chdir('/')            
         temp2 = os.path.abspath(os.getcwd())
         try :
             return send_from_directory(directory=temp1, path="output1.csv")
