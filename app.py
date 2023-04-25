@@ -8,26 +8,34 @@ import logging
 import schedule
 import os
 import time
-
+import boto3
 
 ######################Set up variables for use in our script
 app = Flask(__name__)
+
+
+def method():
+    whereami = os.path.abspath(os.getcwd())
+    os.chdir('dags/scrapyfbref/')
+    print("1",os.getcwd())
+    os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv -t csv')
+    client = boto3.client("s3")
+    time = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+    client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
+    os.chdir(whereami)   
+
 
 ########################main page
 @app.route('/', methods = ['GET', 'POST'])
 def index():
     if request.method == 'GET':
         print('Scheduler initialised')
-        whereami = os.path.abspath(os.getcwd())
-        os.chdir('dags/scrapyfbref/')
-        print("1",os.getcwd())
-        schedule.every(5).minutes.do(lambda: os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv -t csv'))
-   
+        schedule.every(1).minutes.do(method)
         print('Next job is set to run at: ' + str(schedule.next_run()))
         while True:
             schedule.run_pending()
             time.sleep(1)
-    os.chdir(whereami)
+
     return
 
 @app.route('/scrape', methods = ['GET', 'POST'])
