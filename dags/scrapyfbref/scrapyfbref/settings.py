@@ -11,9 +11,9 @@ BOT_NAME = 'scrapyfbref'
 
 SPIDER_MODULES = ['scrapyfbref.spiders']
 NEWSPIDER_MODULE = 'scrapyfbref.spiders'
-ITEM_PIPELINE = {
-'scrapy.pipelines.files.S3FilesStore': 1
-}
+# ITEM_PIPELINE = {
+# 'scrapy.pipelines.files.S3FilesStore': 1
+# }
 
 AWS_ACCESS_KEY_ID = None
 AWS_SECRET_ACCESS_KEY= None

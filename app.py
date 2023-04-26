@@ -16,6 +16,8 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 logging.info("Hello...")
 logging.basicConfig(level=logging.WARN)
+logging.info('Scheduler initialised')
+
 
 bucket_name = "fbrefdata0922"
 
@@ -39,17 +41,17 @@ def method():
         except:
             try:
                 with open("output1.csv", 'rb') as f:
-                    response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output/output_{time}.csv', data=f)
+                    response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output/output2_{time}.csv', data=f)
             except:
                 pass
         os.chdir(whereami) 
-        return redirect("https://www.bbc.com/sport/football")
     except:
         logging.basicConfig(level=logging.DEBUG)
         logging.info(f"Not Managed to Change {os.getcwd()}")
         logging.basicConfig(level=logging.WARN)
 
-
+schedule.every(5).minutes.do(method)
+logging.info('Next job is set to run at: ' + str(schedule.next_run()))
 
 ########################main page
 @app.route('/', methods = ['GET', 'POST'])
@@ -70,9 +72,10 @@ def scrape():
         whereami = os.path.abspath(os.getcwd())
         try :
             os.chdir('dags/scrapyfbref/')
-            logging.info("1",os.getcwd())
+            logging.info( f" 1  { os.getcwd() } ")
         except:
-            logging.info("2",os.getcwd())
+            #logging.info("2",os.getcwd())
+            logging.info( f" 2  { os.getcwd() } ")
      #   call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
     #    call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=8","-o","output1.csv"])
         call(["scrapy", "crawl", "fbref","-o","output1.csv", "-t","csv"])
@@ -100,6 +103,10 @@ def download():
   
     return (f"Run The Scraper")
 
+
+while True:
+    schedule.run_pending()
+    time.sleep(3)
 ########################main page
 if __name__ == "__main__":    
     app.run(port=8000, debug=True)
