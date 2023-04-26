@@ -12,49 +12,51 @@ import boto3
 
 ######################Set up variables for use in our script
 app = Flask(__name__)
-
-
-@app.before_first_request
-def init_app():
-    print("Hello...")
-
+logging.basicConfig(level=logging.DEBUG)
+logging.info("Hello...")
+print("Hello")
 
 def method():
+    logging.basicConfig(level=logging.DEBUG)
     whereami = os.path.abspath(os.getcwd())
     try:
         os.chdir('dags/scrapyfbref/')
+        logging.info(f"Changed to {os.getcwd()}")
+        os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv')
+        client = boto3.client("s3", aws_access_key_id=None,
+            aws_secret_access_key= None)
+        time = datetime.now().strftime("%Y%m%d%H%M%S")
+        logging.info(f"2 {os.getcwd()}")
+        client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
+        os.chdir(whereami) 
+        return redirect("https://www.bbc.com/sport/football")
     except:
-        pass
-    print("1",os.getcwd())
-    os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv:csv')
-    client = boto3.client("s3", aws_access_key_id=None,
-         aws_secret_access_key= None)
-    time = datetime.now().strftime("%Y%m%d%H%M%S")
-    client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
-    os.chdir(whereami) 
-    return redirect("https://www.bbc.com/sport/football")
+        logging.info(f"Not Managed to Change {os.getcwd()}")
+
 
 
 ########################main page
 @app.route('/', methods = ['GET', 'POST'])
 def index():
+    logging.basicConfig(level=logging.DEBUG)
     if request.method == 'GET':
-        print('Scheduler initialised')
-        schedule.every(1).minutes.do(method)
-        print('Next job is set to run at: ' + str(schedule.next_run()))
+        logging.info('Scheduler initialised')
+        schedule.every(11).minutes.do(method)
+        logging.info('Next job is set to run at: ' + str(schedule.next_run()))
         while True:
             schedule.run_pending()
             time.sleep(1)
 
 @app.route('/scrape', methods = ['GET', 'POST'])
 def scrape():
+    logging.basicConfig(level=logging.DEBUG)
     if request.method == 'GET':
         whereami = os.path.abspath(os.getcwd())
         try :
             os.chdir('dags/scrapyfbref/')
-            print("1",os.getcwd())
+            logging.info("1",os.getcwd())
         except:
-            print("2",os.getcwd())
+            logging.info("2",os.getcwd())
      #   call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=30","-o","output.csv"])
     #    call(["scrapy", "crawl", "fbref","-s","CLOSESPIDER_PAGECOUNT=8","-o","output1.csv"])
         call(["scrapy", "crawl", "fbref","-o","output1.csv", "-t","csv"])
@@ -63,6 +65,7 @@ def scrape():
     
 @app.route("/download", methods = ["GET", "POST"])
 def download():
+    logging.basicConfig(level=logging.DEBUG)
     if request.method == 'GET':
         whereami = os.path.abspath(os.getcwd())
         try:

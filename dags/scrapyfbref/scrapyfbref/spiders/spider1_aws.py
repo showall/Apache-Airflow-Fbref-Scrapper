@@ -25,11 +25,6 @@ class MySpiderForPlayers(CrawlSpider):
 #     }
 # }
     }    
-    def __init__(self):
-        self.credentials = botocore.credentials.Credentials(
-        access_key='dummy',
-        secret_key='dummy'
-    )
 
 #--------------------------SECTION 1-----------------------------------------------
 
@@ -86,6 +81,12 @@ class MySpiderForPlayers(CrawlSpider):
             callback='parse_extract', follow=False),
     )
 
+
+
+    credentials = botocore.credentials.Credentials(
+        access_key='dummy',
+        secret_key='dummy'
+    )
 
     def parse_club_links(self, response):
         count = 0 
