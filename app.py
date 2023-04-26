@@ -23,11 +23,14 @@ def method():
         os.chdir('dags/scrapyfbref/')
         logging.info(f"Changed to {os.getcwd()}")
         os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv')
-        client = boto3.client("s3", aws_access_key_id=None,
-            aws_secret_access_key= None)
+        client = boto3.client("s3", aws_access_key_id="AKIASCUU2GL3UMLBKS4M",
+            aws_secret_access_key= "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")
         time = datetime.now().strftime("%Y%m%d%H%M%S")
         logging.info(f"2 {os.getcwd()}")
-        client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
+        try:
+            client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
+        except:
+            pass
         os.chdir(whereami) 
         return redirect("https://www.bbc.com/sport/football")
     except:
@@ -41,7 +44,7 @@ def index():
     logging.basicConfig(level=logging.DEBUG)
     if request.method == 'GET':
         logging.info('Scheduler initialised')
-        schedule.every(11).minutes.do(method)
+        schedule.every(5).minutes.do(method)
         logging.info('Next job is set to run at: ' + str(schedule.next_run()))
         while True:
             schedule.run_pending()
