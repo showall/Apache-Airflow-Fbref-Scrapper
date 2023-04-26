@@ -104,9 +104,12 @@ def download():
     return (f"Run The Scraper")
 
 
+
+
+
 while True:
+    if __name__ == "__main__":    
+        app.run(port=8000, debug=True)
     schedule.run_pending()
     time.sleep(3)
 ########################main page
-if __name__ == "__main__":    
-    app.run(port=8000, debug=True)

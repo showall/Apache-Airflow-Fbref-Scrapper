@@ -14,7 +14,7 @@ class MySpiderForPlayers(CrawlSpider):
         "DOWNLOAD_DELAY" : 4,
         "DOWNLOAD_TIMEOUT" : 9,
         "CONCURRENT_REQUESTS" : 20,
-        "CLOSESPIDER_TIMEOUT" : 60 * 3
+        "CLOSESPIDER_TIMEOUT" : 60 * 3 
     #    "CLOSESPIDER_PAGECOUNT" : 10,
   #      "CLOSESPIDER_ITEMCOUNT" : 100
 #         "FEEDS" : {
