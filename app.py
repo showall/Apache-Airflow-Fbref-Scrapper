@@ -27,14 +27,15 @@ def method():
     try:
         os.chdir('dags/scrapyfbref/')
         logging.basicConfig(level=logging.DEBUG)
-        logging.info(f"Changed to {os.getcwd()}")
+        INFO1 = os.getcwd()
+        logging.info(f"Changed to {INFO1}")
         logging.basicConfig(level=logging.WARN)
         os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv')
         client = boto3.client("s3", aws_access_key_id="AKIASCUU2GL3UMLBKS4M",
             aws_secret_access_key= "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")
         time = datetime.now().strftime("%Y%m%d%H%M%S")
         logging.basicConfig(level=logging.DEBUG)
-        logging.info(f"2 {os.getcwd()}")
+       # logging.info(f"2 {os.getcwd()}")
         logging.basicConfig(level=logging.WARN)
         try:
             client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
@@ -106,10 +107,8 @@ def download():
 
 
 
+if __name__ == "__main__":    
 
-while True:
-    if __name__ == "__main__":    
         app.run(port=8000, debug=True)
-    schedule.run_pending()
-    time.sleep(3)
+
 ########################main page
