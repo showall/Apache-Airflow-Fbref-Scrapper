@@ -9,32 +9,45 @@ import schedule
 import os
 import time
 import boto3
+import requests
 
 ######################Set up variables for use in our script
 app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 logging.info("Hello...")
-print("Hello")
+logging.basicConfig(level=logging.WARN)
+
+bucket_name = "fbrefdata0922"
 
 def method():
     logging.basicConfig(level=logging.DEBUG)
     whereami = os.path.abspath(os.getcwd())
     try:
         os.chdir('dags/scrapyfbref/')
+        logging.basicConfig(level=logging.DEBUG)
         logging.info(f"Changed to {os.getcwd()}")
+        logging.basicConfig(level=logging.WARN)
         os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv')
         client = boto3.client("s3", aws_access_key_id="AKIASCUU2GL3UMLBKS4M",
             aws_secret_access_key= "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")
         time = datetime.now().strftime("%Y%m%d%H%M%S")
+        logging.basicConfig(level=logging.DEBUG)
         logging.info(f"2 {os.getcwd()}")
+        logging.basicConfig(level=logging.WARN)
         try:
             client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
         except:
-            pass
+            try:
+                with open("output1.csv", 'rb') as f:
+                    response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output/output_{time}.csv', data=f)
+            except:
+                pass
         os.chdir(whereami) 
         return redirect("https://www.bbc.com/sport/football")
     except:
+        logging.basicConfig(level=logging.DEBUG)
         logging.info(f"Not Managed to Change {os.getcwd()}")
+        logging.basicConfig(level=logging.WARN)
 
 
 
