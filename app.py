@@ -14,6 +14,11 @@ import boto3
 app = Flask(__name__)
 
 
+@app.before_first_request
+def init_app():
+    print("Hello...")
+
+
 def method():
     whereami = os.path.abspath(os.getcwd())
     try:
@@ -26,7 +31,8 @@ def method():
          aws_secret_access_key= None)
     time = datetime.now().strftime("%Y%m%d%H%M%S")
     client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
-    os.chdir(whereami)   
+    os.chdir(whereami) 
+    return redirect("https://www.bbc.com/sport/football")
 
 
 ########################main page
@@ -34,13 +40,11 @@ def method():
 def index():
     if request.method == 'GET':
         print('Scheduler initialised')
-        schedule.every(10).minutes.do(method)
+        schedule.every(1).minutes.do(method)
         print('Next job is set to run at: ' + str(schedule.next_run()))
         while True:
             schedule.run_pending()
             time.sleep(1)
-
-    return
 
 @app.route('/scrape', methods = ['GET', 'POST'])
 def scrape():

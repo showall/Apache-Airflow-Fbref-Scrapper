@@ -2,6 +2,7 @@ import scrapy
 from scrapy.spiders import CrawlSpider,  Rule
 from scrapy.linkextractors import LinkExtractor
 import boto3
+import botocore.credentials
 
 class MySpiderForPlayers(CrawlSpider):
     user_agent ="Custom"
@@ -24,7 +25,11 @@ class MySpiderForPlayers(CrawlSpider):
 #     }
 # }
     }    
-    
+    def __init__(self):
+        self.credentials = botocore.credentials.Credentials(
+        access_key='dummy',
+        secret_key='dummy'
+    )
 
 #--------------------------SECTION 1-----------------------------------------------
 
