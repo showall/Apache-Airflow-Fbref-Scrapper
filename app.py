@@ -38,11 +38,11 @@ def method():
        # logging.info(f"2 {os.getcwd()}")
         logging.basicConfig(level=logging.WARN)
         try:
-            client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
+            client.upload_file("output1.csv", "fbrefdata0922", f"output2/output_{time}.csv")
         except:
             try:
                 with open("output1.csv", 'rb') as f:
-                    response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output/output2_{time}.csv', data=f)
+                    response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output2/output2_{time}.csv', data=f)
             except:
                 pass
         os.chdir(whereami) 

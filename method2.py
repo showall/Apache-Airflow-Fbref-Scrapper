@@ -30,7 +30,7 @@ def run():
         logging.basicConfig(level=logging.DEBUG)
         logging.basicConfig(level=logging.WARN)
         try:
-            client.upload_file("output1.csv", "fbrefdata0922", f"output/output_{time}.csv")
+            client.upload_file("output1.csv", "fbrefdata0922", f"output2/output_{time}.csv")
         except:
             try:
                 with open("output1.csv", 'rb') as f:
