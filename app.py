@@ -39,10 +39,12 @@ def method():
         logging.basicConfig(level=logging.WARN)
         try:
             client.upload_file("output1.csv", "fbrefdata0922", f"output2/output_{time}.csv")
+            os.remove("output1.csv")
         except:
             try:
                 with open("output1.csv", 'rb') as f:
                     response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output2/output2_{time}.csv', data=f)
+                os.remove("output1.csv")
             except:
                 pass
         os.chdir(whereami) 
@@ -69,8 +71,8 @@ def run():
     logging.basicConfig(level=logging.DEBUG)
     if request.method == 'GET':
         logging.info('Scheduler initialised')
-        schedule.every(5).minutes.do(method).tag("job1")
-        schedule.every(5).minutes.do(lambda : log_next_run("job1"))
+        schedule.every(10).minutes.do(method).tag("job1")
+        schedule.every(10).minutes.do(lambda : log_next_run("job1"))
 
         while True:
             schedule.run_pending()
