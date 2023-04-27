@@ -19,7 +19,8 @@ def run():
     def method():
         whereami = os.path.abspath(os.getcwd())
         try:
-            os.chdir('dags/scrapyfbref/')
+
+            os.chdir('airflow/dags/scrapyfbref/')
             logging.basicConfig(level=logging.DEBUG)
             INFO1 = os.getcwd()
             logging.info(f"Changed to {INFO1}")

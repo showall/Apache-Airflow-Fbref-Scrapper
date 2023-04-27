@@ -51,20 +51,33 @@ def method():
         logging.info(f"Not Managed to Change {os.getcwd()}")
         logging.basicConfig(level=logging.WARN)
 
-schedule.every(5).minutes.do(method)
-logging.info('Next job is set to run at: ' + str(schedule.next_run()))
+def log_next_run(tag):
+    logging.info('Next job is set to run at: ' + str(schedule.next_run(tag)))
+
+
 
 ########################main page
+
 @app.route('/', methods = ['GET', 'POST'])
 def index():
+    return (f"success")
+
+
+
+@app.route('/run', methods = ['GET', 'POST'])
+def run():
     logging.basicConfig(level=logging.DEBUG)
     if request.method == 'GET':
         logging.info('Scheduler initialised')
-        schedule.every(5).minutes.do(method)
-        logging.info('Next job is set to run at: ' + str(schedule.next_run()))
+        schedule.every(5).minutes.do(method).tag("job1")
+        schedule.every(5).minutes.do(lambda : log_next_run("job1"))
+
         while True:
             schedule.run_pending()
-            time.sleep(1)
+            time.sleep(60)
+
+    return (f"success")
+
 
 @app.route('/scrape', methods = ['GET', 'POST'])
 def scrape():
