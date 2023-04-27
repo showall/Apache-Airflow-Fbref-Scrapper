@@ -37,7 +37,7 @@ def run():
             except:
                 try:
                     with open("output1.csv", 'rb') as f:
-                        response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output2/output2_{time}.csv', data=f)
+                        response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output2/output2run_{time}.csv', data=f)
                 except:
                     pass
             os.chdir(whereami) 
