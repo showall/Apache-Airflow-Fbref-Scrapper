@@ -22,11 +22,11 @@ AWS_REGION_NAME = 'ap-southeast-1'
 # FEED_FORMAT ='csv'
 
 
-FEEDS = {
-    's3://fbrefdata0922/players_linkss.csv': {
-        'format': 'csv',
-    }
-}
+# FEEDS = {
+#     's3://fbrefdata0922/players_linkss.csv': {
+#         'format': 'csv',
+#     }
+# }
 
 
 
