@@ -30,6 +30,10 @@ def method():
         INFO1 = os.getcwd()
         logging.info(f"Changed to {INFO1}")
         logging.basicConfig(level=logging.WARN)
+        try:
+            os.remove("output1.csv")
+        except:
+            pass
         os.system('scrapy crawl fbref -s JOBDIR=crawls/somespider-1 -o output1.csv')
         client = boto3.client("s3", aws_access_key_id="AKIASCUU2GL3UMLBKS4M",
             aws_secret_access_key= "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")
@@ -39,12 +43,10 @@ def method():
         logging.basicConfig(level=logging.WARN)
         try:
             client.upload_file("output1.csv", "fbrefdata0922", f"output2/output_{time}.csv")
-            os.remove("output1.csv")
         except:
             try:
                 with open("output1.csv", 'rb') as f:
                     response = requests.put(f'https://{bucket_name}.s3.amazonaws.com/output2/output2_{time}.csv', data=f)
-                os.remove("output1.csv")
             except:
                 pass
         os.chdir(whereami) 
